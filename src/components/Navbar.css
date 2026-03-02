@@ -1,0 +1,4 @@
+.dropdown:hover ul.dropdown-content {
+    display: flex;
+
+}
