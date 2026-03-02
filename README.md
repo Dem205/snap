@@ -1,16 +1,87 @@
-# React + Vite
+# Frontend Mentor - Intro section with dropdown navigation solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-## React Compiler
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Overview
 
-## Expanding the ESLint configuration
+### The challenge
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Users should be able to:
+
+- View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
+- View the optimal layout for the content depending on their device's screen size
+- See hover states for all interactive elements on the page
+
+### Screenshot
+
+![](./src/assets/Screenshot%202026-03-02%20at%2015.57.43.png)
+
+
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+
+**Note: These are just examples. Delete this note and replace the list above with your own choices**
+
+### What I learned
+Rendering the contents of the carousel dynamically using arrays was pretty cool.
+
+
+```jsx
+{/* 2. The Animated Track */}
+      <div className="flex animate-marquee whitespace-nowrap">
+        {/* First Loop */}
+        <div className="flex shrink-0 items-center gap-12 px-6">
+          {items.map((item, index) => (
+            <img src={`./src/assets/${item}.svg`} key={index} alt={item} />
+          ))}
+        </div>
+
+        {/* Second Loop (Exact Duplicate) */}
+        <div className="flex shrink-0 items-center gap-12 px-6">
+          {items.map((item, index) => (
+            <img src={`./src/assets/${item}.svg`} key={index} alt={item} />
+          ))}
+        </div>
+```
+
+
+
+### Continued development
+Proficiency with state and other React Hooks.
+
+**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+
+
+
+
+
+## Author
+- Frontend Mentor - [@Dem205](https://www.frontendmentor.io/profile/Dem205)
+- Twitter - [@ademilade__](https://www.twitter.com/yourusername)
+

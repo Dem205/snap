@@ -49,7 +49,7 @@ function Navbar() {
               </span>
               
               {/* Desktop Hover Dropdown */}
-              <ul className="absolute top-full left-0 mt-2 hidden group-hover:flex flex-col bg-white p-4 rounded-xl shadow-2xl w-40 z-50">
+              <ul className="absolute top-full left-0 hidden group-hover:flex flex-col bg-white p-4 rounded-xl shadow-2xl w-40 z-50">
                 {dropdown.items.map((item, idx) => (
                   <li key={idx} className="p-2 hover:text-black flex items-center gap-3">
                     {item.icon && <img src={item.icon} alt="" className="w-4" />}
